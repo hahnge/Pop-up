@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="cz">
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="pop_up.css" rel="stylesheet"/>
+  <script src="pop_up.js"></script>
+  <title>Pop-up</title>
+</head>
+<body>
+  <h1>Toto je Pop-up ukázka</h1>
+  <p>Pozor! Vyletí Pop-up okno!<br>
+  a za ním další a další!</p>
+
+  <div id="modal">
+    <div id="modal-overlay"></div>
+    <div id="modal-content">
+            <h1>Buďme v kontaktu!</h1>
+            <p class="text1">Ať vám neunikne žádná novina</p>
+          
+            <div class="line"></div>
+            
+          <a href="https://www.facebook.com/Hanista.Se">
+            <img class="obrazek_img facebook" src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_960_720.png" alt="facebook">
+          </a>
+          
+          <a href="https://www.linkedin.com/in/hana-ku%C5%BEelov%C3%A1-a315a724b/">
+            <img class="obrazek_img linkedin" src="https://cdn.pixabay.com/photo/2017/03/24/07/28/linkedin-2170421_960_720.png" alt="linkedin">
+          </a>
+          
+          <a href="https://instagram.com/hahnge_cone?igshid=ZDdkNTZiNTM=">
+            <img class="obrazek_img instagram" src="https://cdn.pixabay.com/photo/2016/09/17/07/03/instagram-1675670_960_720.png" alt="instagram">
+          </a>
+      <button id="modal-close">X</button>
+    </div>
+  </div>
+
+  <div id="modal2">
+    <div id="modal_overlay2"></div>
+    <div id="modal_content2">
+            <h1>Dotazník</h1>
+            <div class="line2"></div>
+            <p class="text2">Vy ste poznali mě, <br> 
+              tak já chci poznat vás.</p>
+
+              <div class="vlevo">
+              <div class="jmeno">
+                <label for="jmeno" id="jmeno_label">Jméno a příjmení<br />
+                <input id="jmeno" name="jmeno" type="text" class="f" placeholder="Vložte své jméno"></label>
+                </div>
+
+                <div class="adresa">
+        <label for="email" id="email_label">Email<br /> 
+          <input id="email" name="email" 
+                type="email" class="f" 
+                placeholder="Vložte svůj email" required /></label>
+        </div>
+   
+    <div class="textovka">
+      <p>Něco málo o vás</p>
+      <textarea
+        id="comments"
+        class="input_textarea"
+        name="comment"
+        placeholder="...Vložte svůj komentář..."
+      ></textarea>
+    </div>
+    <div class="submit">
+      <button type="submit" 
+      id="submit" 
+      class="submit_button">
+          Submit
+        </button>
+      </div>
+  </div>
+
+      <button id="modal_close2">X</button>
+    </div>
+  </div>
+
+
+</body>
+</html>

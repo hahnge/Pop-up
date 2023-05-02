@@ -1,0 +1,256 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    background: #f5f6f7;
+    background-image: linear-gradient( 115deg, rgba(255, 255, 255, 0.589),
+     rgba(62, 161, 67, 0.623) ), 
+     url(https://cdn.pixabay.com/photo/2022/05/31/00/56/sky-7232494_960_720.jpg);
+    padding: auto;
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  }
+
+ /* Pop-up 1 */
+ 
+  .line {
+    height: 3px; 
+    background-color: #000; 
+    margin: 10px 0;
+    width: 290px; 
+    border-radius: 50%;
+  }
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 9999;
+  }
+  
+  #modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 23, 23, 0.76);
+  }
+  
+  #modal-content {
+    background-image: 
+    linear-gradient( 115deg, rgb(255, 255, 255),
+     rgba(9, 11, 134, 0.377) ), 
+     url(https://cdn.pixabay.com/photo/2014/02/11/18/41/japan-264245_960_720.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: #ffffff;
+    width: 50%;
+    height: 200px;
+    padding: 5%;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 20px;
+    border: 1px solid black;
+    overflow: hidden;
+  }
+  
+  #modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  #vyskakovaci_okno {
+    color: rgb(83, 83, 83);
+  }
+
+  .dobrydenahoj {
+    color:rgb(0, 0, 0)
+  }
+
+  .facebook, .linkedin, .instagram {
+    display: inline-block; 
+    margin: 15px; 
+    width: 60px;
+    height: 60px;
+    padding: 0%;
+    background-color: rgba(0, 0, 0, 0.623);
+    border-radius: 50%;
+    transition: transform 0.2s ease-out;
+}
+
+.facebook:hover, .linkedin:hover, .instagram:hover {
+  transform: scale(1.1) !important;
+}
+
+.obrazek_img {
+  display: inline-block; 
+    margin: 15px; 
+    width: 60px;
+    height: 60px;
+    padding: 0%;
+    background-color: rgba(0, 0, 0, 0.623);
+    border-radius: 50%;
+}
+
+.text1 {
+  padding-left: 5%;
+}
+
+ /* Pop-up 2 */
+
+  .line2 {
+    height: 3px; 
+    background-color: #000; 
+    margin: 10px 0;
+    width: 290px; 
+    border-radius: 50%;
+  }
+
+  #modal2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 9999;
+  }
+
+  #modal_overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 23, 23, 0.76);
+  }
+
+  #modal_content2 {
+    background-image: 
+    linear-gradient( 115deg, rgb(255, 255, 255),
+    rgba(9, 11, 134, 0.377) ), 
+    url(https://cdn.pixabay.com/photo/2014/02/11/18/41/japan-264245_960_720.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: #ffffff;
+    width: 50%;
+    height: 30%;
+    padding: 5%;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 50px;
+    border: 1px solid black;
+    overflow: hidden;
+  }
+
+  #modal_close2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  #vyskakovaci_okno2 {
+    color: rgb(83, 83, 83);
+  }
+
+  .dobrydenahoj2 {
+    color:rgb(0, 0, 0)
+  }
+
+  .text2 {
+  padding-left: 0%;
+  padding-top: 2%;
+  }
+
+  /* dotazník v Pop-up 2 */
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .left {
+    flex-basis: 50%;
+  }
+
+  .text2 {
+    padding-left: 0;
+    padding-top: 2%;
+    flex-basis: 50%;
+  }
+  
+  .vlevo {
+    position: absolute;
+    top: 25%;
+    right: 50px;
+    border-radius: 30px;
+    background-color: #ffffff1f;
+    width: auto;
+    height: 65%;
+    align-items: center;
+}
+
+.jmeno, .adresa {
+    display: inline-block; 
+    vertical-align: top; 
+    margin-right: 3px;
+    margin-left: 1%;
+    text-align: center;
+    margin-left: auto;
+}
+
+.textovka {
+    text-align: center;
+    margin-top: 3px;
+    margin-left: auto;
+}
+
+.textovka textarea {
+    display: block;
+    margin: 0;
+    width: 96%;
+    height: 80px;
+}
+
+.submit {
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 50px;
+}
+
+.submit_button {
+  border-radius: 25px;
+  background-color: rgba(0, 139, 109, 0.507);
+}
+
+
+input {
+  border-radius: 25px;
+}
+
+.input_textarea {
+  border-radius: 20px;
+}
+
+
